@@ -1,0 +1,11 @@
+<html>
+  <body>
+    File Not Found: <span></span>
+    <script>
+      const urlSearchParams = new URLSearchParams(window.location.search);
+      const path = urlSearchParams.get("path");
+     
+      document.getElementsByTagName("span")[0].innerText = path;
+    </script>
+  </body>
+</html>
