@@ -7,47 +7,97 @@
             padding: 0;
             margin: 0;
             border: 0 none;
-            font-weight: bold;
             color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            margin: 5px;
+            font-size: max(6vh, 24px);
+            -webkit-text-stroke: 1px black;
+            font-weight: bolder;
+            text-transform: uppercase;
         }
 
         header,
+        article,
         footer {
             padding: 10px;
+            max-width: 1024px;
+            margin: auto;
         }
-        
+
         body {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            background-color: darkblue;
         }
-        
+
         header {
-            background-color: #EEEEEE;
-            border-bottom: 2px solid white;
-            font-size: 10vh;
-            text-shadow: 2px 2px 4px lightgray;
-            color: black;
+            font-size: max(10vh, 40px);
+            text-shadow: 0 0 1px black, 2px 2px 3px red;
+            color: white;
+            text-align: center;
+            border-radius: 2vh;
+            max-width: 1220px;
         }
-        
+
         article {
             flex: 1;
             padding: 15px;
-            border: 4px solid black;
-            box-shadow: inset 0 0 10px 10px black;
-            background-color: darkblue;
+            border: 1px solid darkblue;
+            background-color: black;
+            border-radius: 2vh;
+            font-size: 24px;
+            background-image: url(butterflies.jpg);
+            animation-name: example;
+            animation-duration: 10s;
         }
-        
+
         footer {
             background-color: darkblue;
-            border-top: 2px solid white;
+        }
+
+        ul {
+            list-style: square;
+            margin: 20px;
+        }
+
+        li {
+            margin: 5px;
+        }
+
+        @keyframes example {
+            from {
+                background-size: 400%;
+            }
+
+            to {
+                background-size: 420%;
+            }
         }
     </style>
 </head>
 
 <body>
     <header>Rossum's Universal Transport</header>
-    <article>At Rossum's, we provide a framework to "get you there" in style, comfort, and luxury. </article>
+    <article>
+        <p>Travel worldwide in luxury in your Rossum Standard Transport Container (RSTAC)</p>
+<!-- 
+        <p>Step 1: Purchase a Rossum Standard Personal Transport Container from your local RV dealer in one of the following footprints.</p>
+        <ul>
+            <li>40x8 foot Luxury Transport Container</li>
+            <li>20x8 foot Standard Transport Container</li>
+            <li>10x8 foot Personal Transport Container</li>
+        </ul>
+
+        <p>Step 2: Log into Rossum's Universal Transport and specify a destination and travel comfort parameters. We
+            will calculate the route, travel time, and cost.</p>
+
+        <p>Step 3: Enjoy a luxury journey to anywhere in the world from the comfort of your Transport Container.</p> -->
+
+    </article>
     <footer>&copy; Copyright 2021 Rossum's Universal Transport</footer>
 </body>
 
