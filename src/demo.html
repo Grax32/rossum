@@ -1,4 +1,18 @@
 <html>
+  <head>
+    <style type="text/css">
+
+input:required:invalid, input:focus:invalid {
+  /* insert your own styles for invalid form input */
+  -moz-box-shadow: none;
+}
+      
+      :invalid {
+       border: 2px solid red; 
+      }
+
+    </style>
+  </head>
   <body>
     <form>
       Your Name: <input type="text" name="name" required>
