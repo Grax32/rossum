@@ -1,75 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rossum's Universal Transport</title>
-  <link rel="stylesheet" href="/content/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rossum's Universal Transport</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        a {
+            color: lightpink;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        html,
+        body {
+            width: 100%;
+            background-color: black;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header img {
+            width: 100%;
+        }
+
+        header nav {
+            display: block;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 20px 0;
+            gap: 15px;
+        }
+
+        header nav ul li {
+            font-size: 1.4rem;
+        }
+
+        header nav ul li::before {
+            content: "•";
+            color: white;
+            font-size: 1rem;
+            margin-right: 15px;
+        }
+
+        header nav ul li:first-child:before {
+            content: "";
+        }
+
+        section {
+            width: 100%;
+        }
+
+        section img {
+            width: 100%;
+            display: block;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        div.container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        div.container p {
+            font-size: 1.4rem;
+            margin: 20px 0;
+        }
+    </style>
 </head>
+
 <body>
 
-<header>
-  <div class="container">
-    <h1>Rossum's Universal Transport</h1>
-    <nav>
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <header>
+        <img class="main-banner" src="/images/rossums-truck.jpeg" alt="Rossum's Universal Transport" />
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section id="hero">
-  <div class="container">
-    <h2>Experience the Future of Travel</h2>
-    <p>Redefining travel with innovative, comfortable, and sustainable solutions.</p>
-    <img src="images/stacked-containers.png" alt="Stacked Containers"/>
-    <a href="#services" class="btn">Explore Our Services</a>
-  </div>
-</section>
+    <section id="hero">
+        <div class="container">
+            <h2>Experience the Future of Travel</h2>
+            <p>Redefining travel with innovative, comfortable, and sustainable solutions.</p>
+            <a href="#services" class="btn">Explore Our Services</a>
+        </div>
+        <img src="images/stacked-containers.png" alt="Stacked Containers" />
+    </section>
 
-<section id="services">
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="service">
-      <h3>Livable Pods</h3>
-      <img src="images/container-deck.png" alt="Container Deck"/>
-      <p>Transport individuals and families in special livable pods with power, plumbing, and windows.</p>
-    </div>
-    <div class="service">
-      <h3>Global Connectivity</h3>
-      <p>Travel to and from any location in the world using a mixture of planes, trains, trucks, and ships.</p>
-    </div>
-    <div class="service">
-      <h3>Comfortable Journeys</h3>
-      <p>Enjoy spacious living spaces and breathtaking views during every journey.</p>
-    </div>
-  </div>
-</section>
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Livable Pods</h3>
 
-<section id="about">
-  <div class="container">
-    <h2>About Us</h2>
-    <p>Rossum's Universal Transport is committed to providing seamless and sustainable travel experiences for our customers.</p>
-  </div>
-</section>
+                <p>Transport individuals and families in special livable pods with power, plumbing, and windows.</p>
+            </div>
+            <div class="service">
+                <h3>Global Connectivity</h3>
+                <p>Travel to and from any location in the world using a mixture of trains, trucks, and ships.
+                </p>
+            </div>
+            <div class="service">
+                <h3>Comfortable Journeys</h3>
+                <p>Enjoy spacious living spaces and breathtaking views during every journey.</p>
+            </div>
+        </div>
+        <img src="images/container-deck.png" alt="Container Deck" />
+    </section>
 
-<section id="contact">
-  <div class="container">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or inquiries, feel free to get in touch with us.</p>
-    <img src="images/mr-rossum.png" alt="Mr. Rossum"/>
-    <a href="mailto:info@rossumsuniversal.com" class="btn">Email Us</a>
-  </div>
-</section>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Rossum's Universal Transport is committed to providing seamless and sustainable travel experiences for
+                our customers.</p>
+        </div>
+    </section>
 
-<footer>
-  <div class="container">
-    <p>&copy; 2024 Rossum's Universal All rights reserved.</p>
-  </div>
-</footer>
+    <section id="contact">
+        <div class="container">
+            <h2>Join the Adventure!</h2>
+            <p>Contact us to take the next step in luxury travel.</p>
+
+            <a href="mailto:info@rossumsuniversal.com" class="btn">Email Us</a>
+        </div>
+        <img src="images/mr-rossum.png" alt="Mr. Rossum" />
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rossum's Universal All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
+
 </html>
