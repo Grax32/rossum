@@ -26,7 +26,8 @@
         html,
         body {
             width: 100%;
-            background-color: black;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, darkblue 50%, rgba(0, 0, 0, 1) 100%);
         }
 
         header {
@@ -89,76 +90,84 @@
             font-size: 1.4rem;
             margin: 20px 0;
         }
+
+        div.main-body {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            background-color: black;
+        }
     </style>
 </head>
 
 <body>
+    <div class="main-body">
+        <header>
+            <img class="main-banner" src="/images/rossums-truck.jpeg" alt="Rossum's Universal Transport" />
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <header>
-        <img class="main-banner" src="/images/rossums-truck.jpeg" alt="Rossum's Universal Transport" />
-        <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="hero">
-        <div class="container">
-            <h2>Experience the Future of Travel</h2>
-            <p>Redefining travel with innovative, comfortable, and sustainable solutions.</p>
-            <a href="#services" class="btn">Explore Our Services</a>
-        </div>
-        <img src="images/stacked-containers.png" alt="Stacked Containers" />
-    </section>
-
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service">
-                <h3>Livable Pods</h3>
-
-                <p>Transport individuals and families in special livable pods with power, plumbing, and windows.</p>
+        <section id="hero">
+            <div class="container">
+                <h2>Experience the Future of Travel</h2>
+                <p>Redefining travel with innovative, comfortable, and sustainable solutions.</p>
+                <a href="#services" class="btn">Explore Our Services</a>
             </div>
-            <div class="service">
-                <h3>Global Connectivity</h3>
-                <p>Travel to and from any location in the world using a mixture of trains, trucks, and ships.
-                </p>
+            <img src="images/stacked-containers.png" alt="Stacked Containers" />
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service">
+                    <h3>Livable Pods</h3>
+
+                    <p>Transport individuals and families in special livable pods with power, plumbing, and windows.</p>
+                </div>
+                <div class="service">
+                    <h3>Global Connectivity</h3>
+                    <p>Travel to and from any location in the world using a mixture of trains, trucks, and ships.
+                    </p>
+                </div>
+                <div class="service">
+                    <h3>Comfortable Journeys</h3>
+                    <p>Enjoy spacious living spaces and breathtaking views during every journey.</p>
+                </div>
             </div>
-            <div class="service">
-                <h3>Comfortable Journeys</h3>
-                <p>Enjoy spacious living spaces and breathtaking views during every journey.</p>
+            <img src="images/container-deck.png" alt="Container Deck" />
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Rossum's Universal Transport is committed to providing seamless and sustainable travel experiences
+                    for
+                    our customers.</p>
             </div>
-        </div>
-        <img src="images/container-deck.png" alt="Container Deck" />
-    </section>
+        </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Rossum's Universal Transport is committed to providing seamless and sustainable travel experiences for
-                our customers.</p>
-        </div>
-    </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Join the Adventure!</h2>
+                <p>Contact us to take the next step in luxury travel.</p>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Join the Adventure!</h2>
-            <p>Contact us to take the next step in luxury travel.</p>
+                <a href="mailto:info@rossumsuniversal.com" class="btn">Email Us</a>
+            </div>
+            <img src="images/mr-rossum.png" alt="Mr. Rossum" />
+        </section>
 
-            <a href="mailto:info@rossumsuniversal.com" class="btn">Email Us</a>
-        </div>
-        <img src="images/mr-rossum.png" alt="Mr. Rossum" />
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Rossum's Universal All rights reserved.</p>
-        </div>
-    </footer>
-
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Rossum's Universal All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
